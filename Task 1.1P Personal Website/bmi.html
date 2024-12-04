@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+      function bmiCalculator() {
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let bmi = weight / Math.pow(height, 2);
+        if (bmi < 18.5) {
+          alert("Underweight");
+        } else if (bmi < 25) {
+          alert("Normal");
+        } else if (bmi < 30) {
+          alert("Overweight");
+        } else {
+          alert("Obese");
+        }
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      <h1>What is my BMI? Calculate your body</h1>
+      <br />
+      <br />
+      <br />
+
+      <div class="mb-3">
+        <label for="weight" class="form-label"
+          >Please enter your weight (kg)</label
+        >
+        <input type="number" class="form-control" id="weight" />
+      </div>
+      <div class="mb-3">
+        <label for="height" class="form-label"
+          >Please enter your height (m)</label
+        >
+        <input type="number" class="form-control" id="height" />
+      </div>
+      <br />
+      <br />
+      <button type="button" class="btn btn-success" onclick="bmiCalculator()">
+        Calculate BMI
+      </button>
+    </div>
+  </body>
+</html>

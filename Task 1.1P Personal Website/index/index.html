@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: medium;
+      }
+      .centered {
+        position: absolute;
+        background-color: rgba(64, 67, 70, 0.7);
+        bottom: 20px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: rgb(62, 175, 216);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: #111;
+        color: white;
+      }
+      .avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      h4 {
+        color: rgb(30, 180, 245);
+        text-align: center;
+      }
+      h2 {
+        color: rgb(30, 180, 245);
+        text-align: center;
+      }
+      hr.custom {
+        width: 10%;
+        border: none;
+        height: 1px;
+        background-color: rgb(30, 180, 245);
+        margin: 20px auto;
+      }
+      .image-text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .image-text-container img {
+        border-radius: 8px;
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+      }
+      .image-text-container h5 {
+        margin: 0;
+        color: rgb(30, 180, 245);
+      }
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 1000px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="container">
+      <img src="logo.png" alt="Deakin logo" width="1800" height="300" />
+      <div class="centered">Hey, I’m Jin</div>
+    </div>
+    <br /><br />
+    <img src="avatar.png" alt="Avatar" class="avatar" />
+    <h4>Im a full stack web developer based in melbourne, Austrlia</h4>
+    <hr class="custom" />
+    <h2>Here's What I've done so far</h2>
+    <br /><br />
+    <div class="image-text-container">
+      <img src="image1.jpg" alt="Object-Oriented Development" class="image1" />
+      <h5>Object-Oriented Development</h5>
+    </div>
+    <div class="image-text-container">
+      <img src="image3.jpg" alt="Introduction To Programming" class="image3" />
+      <h5>Introduction To Programming</h5>
+    </div>
+    <hr class="custom" />
+    <br />
+    <h2>My Photos</h2>
+    <br />
+    <div class="gallery-container">
+      <div class="gallery">
+        <img src="image4.jpg" alt="image4" />
+        <img src="image5.jpg" alt="image5" />
+        <img src="image6.jpg" alt="image6" />
+        <img src="image7.jpg" alt="image7" />
+      </div>
+    </div>
+  </body>
+</html>
